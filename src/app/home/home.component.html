@@ -1,0 +1,10 @@
+
+
+ <app-form [loadData]="loadData.bind(this)"></app-form>
+ <div *ngIf="loading" class="loading">loading......</div>
+ <section *ngIf="!loading">
+ <div class="tasks" *ngFor="let task of data">
+   <app-task [data]="task" (onDeleted)="filterAfterDelete($event)"></app-task>
+ </div>
+  <br><br><br><br><br>
+ </section>

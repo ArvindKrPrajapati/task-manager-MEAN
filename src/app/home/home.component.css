@@ -1,0 +1,12 @@
+
+
+ .tasks{
+   position: relative;
+   top:70px;
+ }
+ .loading{
+   position: relative;
+   top:70px;
+   text-align: center;
+   font-size: small;
+ }

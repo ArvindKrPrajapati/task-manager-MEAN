@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+<div class="task" [style.borderLeft]="data.completed && '4px solid green'">
+  <div class="mytask">
+    <strong [style.display]="data.completed ? 'inline' : 'none'">✓ </strong>{{data.name}}     
+  </div>
+  <div class="btns">
+    <button (click)="goEdit(data._id)">edit</button>
+    <button (click)="deleteTask(data._id)">Delete</button>
+  </div>
+</div>

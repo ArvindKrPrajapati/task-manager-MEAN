@@ -1,0 +1,22 @@
+
+
+
+
+
+    <div class="form-div">
+       <label for="name">Edit This Task</label><br>
+       <h4>
+         id:{{id}}
+       </h4>
+        <input type="text" placeholder="Enter a task"  id="name" [(ngModel)]="name"/>
+        <small class="error">{{emptyBoxMess}}</small>
+        <label for="isCompleted">Completed this task: </label>
+        <input type="checkbox"  [(ngModel)]="isCompleted"/>
+        <br><br>
+        <button class="edit" (click)="edit()">Edit Task</button>
+        <p class="success">{{success}}</p>
+        <p class="success" style="color:red">{{error}}</p>
+        <a routerLink="/">go back</a>
+     </div>
+     
+ 

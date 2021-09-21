@@ -1,0 +1,17 @@
+
+
+
+
+     <div class="form-div">
+       <details>
+         <summary>
+           &nbsp;Add Today's Task
+         </summary>
+        <input type="text" placeholder="Enter a task"  id="name" [(ngModel)]="taskName"/>
+        <small class="error">{{emptyTaskField}}</small>
+        <button class="save" (click)="createTask()" [disabled]="loading">{{loading ? 'insering....' : 'Save Task'}}</button>
+        <p class="success">{{success}}</p>
+        <p class="success" style="color:red">{{error}}</p>
+     </details>
+     </div>
+    
